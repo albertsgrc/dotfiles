@@ -1,7 +1,7 @@
 module.exports = {
   brew: [
     // http://conqueringthecommandline.com/book/ack_ag
-    'ack',
+    //'ack',
     'ag',
     // https://github.com/wting/autojump
     'autojump',
@@ -18,7 +18,7 @@ module.exports = {
     'readline', // ensure gawk gets good readline
     'gawk',
     // http://www.lcdf.org/gifsicle/ (because I'm a gif junky)
-    'gifsicle',
+    //'gifsicle',
     'gnupg',
     // Install GNU `sed`, overwriting the built-in `sed`
     // so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
@@ -67,7 +67,7 @@ module.exports = {
     'little-snitch',
     'macbreakz',
     'micro-snitch',
-    'signal',
+    //'signal',
     //'macvim',
     'sizeup',
     //'sketchup',
@@ -75,9 +75,10 @@ module.exports = {
     'the-unarchiver',
     //'torbrowser',
     //'transmission',
-    'visual-studio-code',
-    //'vlc',
-    'xquartz'
+    'vscodium',
+    'vlc',
+    'google-chrome'
+    //'xquartz'
   ],
   gem: [
   ],
@@ -85,7 +86,7 @@ module.exports = {
     'antic',
     'buzzphrase',
     'eslint',
-    'instant-markdown-d',
+    // 'instant-markdown-d',
     // 'generator-dockerize',
     // 'gulp',
     'npm-check-updates',
