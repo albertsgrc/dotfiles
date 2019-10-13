@@ -64,9 +64,6 @@ module.exports = {
     'gpg-suite',
     //'ireadfast',
     'iterm2',
-    'little-snitch',
-    'macbreakz',
-    'micro-snitch',
     //'signal',
     //'macvim',
     'sizeup',
@@ -77,7 +74,9 @@ module.exports = {
     //'transmission',
     'vscodium',
     'vlc',
-    'google-chrome'
+    'google-chrome',
+    'spotify',
+    'rescuetime'
     //'xquartz'
   ],
   gem: [
