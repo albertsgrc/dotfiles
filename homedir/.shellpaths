@@ -1,10 +1,17 @@
-#My Scripts
+# My Scripts
 export PATH=$PATH:.
 #export PATH=$PATH:~/.dotfiles/scripts
+export PATH=$PATH:~/opt/
 
-#Brew
+# Brew
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
+
+# Editor
+export EDITOR=code
+
+# Time format
+export TIMEFORMAT=$'\nTotal: %3lR\nUsuari: %3lU\nSistema: %3lS\n'
 
 # GO
 #export PATH=$PATH:/usr/local/opt/go/libexec/bin

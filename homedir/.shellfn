@@ -126,3 +126,31 @@ function fo() {
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
+
+
+## kill process by pid
+kill() {
+    sudo kill -9 $1
+}
+
+## add, commit, push
+push() {
+     git add -A :/
+     git commit -m "$*"
+     git push
+}
+
+## lists processes using a given port
+whoisusingport() {
+    sudo lsof -i -P -n | grep $1
+}
+
+## find text recursively
+ftext() {
+    sudo grep -rnw "$1" -e "$2"
+}
+
+## find file recursively
+ffile() {
+    sudo find . -iname "*$@*"
+}

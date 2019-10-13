@@ -48,7 +48,9 @@ module.exports = {
     'vim --with-client-server --with-override-system-vi',
     'watch',
     // Install wget with IRI support
-    'wget --enable-iri'
+    'wget --enable-iri',
+    'google-cloud-sdk',
+    'kubernetes-cli'
   ],
   cask: [
     //'adium',

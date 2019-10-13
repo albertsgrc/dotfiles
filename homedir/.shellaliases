@@ -5,6 +5,17 @@
 alias g=git
 
 #############################
+# Shortcuts
+
+alias cd..="cd .."
+
+alias gor="godev; cd myreach/reach"
+
+alias godev="cd ~/dev"
+alias goprog="cd ~/opt"
+alias god="cd ~/Downloads"
+
+#############################
 # Utilities
 
 # Lock the screen (when going AFK)
@@ -37,7 +48,7 @@ alias game.seek='txt="";for i in {1..20};do txt=$txt"$i. ";done;txt=$txt" Ready 
 # Git Tools
 # assumes git-up is installed (gem install git-up)
 # switches to 'develop' branch, updates all local branches (nicely using git-up), removes all local branches already merged into 'develop'
-alias gitdev='git checkout develop; git-up; git branch --merged develop | grep -v "\* develop" | xargs -n 1 git branch -d; git branch;'
+alias gitdev='git checkout dev; git-up; git branch --merged dev | grep -v "\* dev" | xargs -n 1 git branch -d; git branch;'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -62,6 +73,13 @@ alias network.internalip="ifconfig en0 | egrep -o '([0-9]+\.[0-9]+\.[0-9]+\.[0-9
 # -p Postpend slash to folders
 alias ls='ls -G -h -p '
 alias ll='ls -l -G -h -p '
+
+# Typo aliases
+alias LS="ls"
+alias SL="ls"
+alias sl="ls"
+alias lS="ls"
+alias Ls="ls"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
@@ -105,3 +123,11 @@ alias k='kubectl'
 alias kp='kubectl get pods -o wide'
 alias kdp='kubectl describe pod'
 alias kdn='kubectl describe node'
+
+# Compiler aliases
+alias p1++='g++ -ansi -Wall -O2 -DNDEBUG -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow'
+alias a++='compila -ansi -Wall -D_GLIBCXX_DEBUG -DNDEBUG -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow -std=c++1y -I$INCL'
+alias acc='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -I$INCL'
+alias aecc='compila -O2 -Wno-uninitialized -Wshadow -I$INCL'
+alias ae++='compila -ansi -Wall -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow -std=c++1y -O3 -I$INCL'
+alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c++1y -I$INCL'
