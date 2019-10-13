@@ -35,20 +35,9 @@ plugins=(colorize compleat dirpersist autojump git history cp zsh-autosuggestion
 bindkey "[D" backward-word
 bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
-bindkey "^[e" end-of-line
+bindkey "^[e" end-of-lines
 
 source $ZSH/oh-my-zsh.sh
-
-source /usr/local/opt/nvm/nvm.sh --no-use
-
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use &> /dev/null
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
 
 # Customize to your needs...
 unsetopt correct
