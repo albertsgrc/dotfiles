@@ -262,8 +262,12 @@ if [[ $response =~ (y|yes|Y) ]]; then
   popd > /dev/null 2>&1
 fi
 
-running "ZSH Autosuggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+if [[ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]]; then
+  running "Add zsh autosuggestions plugin"
+  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  ok
+fi
 
 bot "VIM Setup"
 read -r -p "Do you want to install vim plugins now? [y|N] " response
