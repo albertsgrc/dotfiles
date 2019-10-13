@@ -50,7 +50,8 @@ module.exports = {
     // Install wget with IRI support
     'wget --enable-iri',
     'google-cloud-sdk',
-    'kubernetes-cli'
+    'kubernetes-cli',
+    'Schniz/tap/fnm'
   ],
   cask: [
     //'adium',
