@@ -716,8 +716,8 @@ defaults write com.apple.screencapture type -string "png";ok
 running "Disable shadow in screenshots"
 defaults write com.apple.screencapture disable-shadow -bool true;ok
 
-running "Enable subpixel font rendering on non-Apple LCDs"
-defaults write NSGlobalDomain AppleFontSmoothing -int 2;ok
+running "Enable subpixel font rendering on non-Apple LCDs: Disabled, soooo ugly"
+defaults write NSGlobalDomain AppleFontSmoothing -int 0;ok
 
 running "Enable HiDPI display modes (requires restart)"
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true;ok
