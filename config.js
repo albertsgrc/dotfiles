@@ -95,6 +95,8 @@ module.exports = {
     'prettyjson',
     'trash',
     'vtop'
+    'coffeescript',
+    'yarn'
     // ,'yo'
   ]
 };
