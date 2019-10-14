@@ -52,7 +52,8 @@ module.exports = {
     'google-cloud-sdk',
     'kubernetes-cli',
     'Schniz/tap/fnm',
-    'k6'
+    'k6',
+    'zsh-syntax-highlighting'
   ],
   cask: [
     //'adium',
