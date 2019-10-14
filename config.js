@@ -51,7 +51,8 @@ module.exports = {
     'wget --enable-iri',
     'google-cloud-sdk',
     'kubernetes-cli',
-    'Schniz/tap/fnm'
+    'Schniz/tap/fnm',
+    'k6'
   ],
   cask: [
     //'adium',
@@ -79,7 +80,8 @@ module.exports = {
     'vlc',
     'google-chrome',
     'spotify',
-    'rescuetime'
+    'rescuetime',
+    'postman'
     //'xquartz'
   ],
   gem: [
