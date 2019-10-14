@@ -96,7 +96,7 @@ module.exports = {
     'npm-check-updates',
     'prettyjson',
     'trash',
-    'vtop'
+    'vtop',
     'coffeescript',
     'yarn'
     // ,'yo'
