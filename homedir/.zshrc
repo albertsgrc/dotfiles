@@ -44,3 +44,5 @@ unsetopt correct
 
 # run fortune on new terminal :)
 # fortune
+# fnm
+eval "$(fnm env --multi)"
