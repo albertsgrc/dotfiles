@@ -81,7 +81,8 @@ module.exports = {
     'google-chrome',
     'spotify',
     'rescuetime',
-    'postman'
+    'postman',
+    'whatsapp'
     //'xquartz'
   ],
   gem: [
