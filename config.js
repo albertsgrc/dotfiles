@@ -100,7 +100,8 @@ module.exports = {
     'trash',
     'vtop',
     'coffeescript',
-    'yarn'
+    'yarn',
+    'lerna'
     // ,'yo'
   ]
 };
