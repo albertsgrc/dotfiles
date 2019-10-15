@@ -815,8 +815,8 @@ bot "Dock & Dashboard"
 running "Enable highlight hover effect for the grid view of a stack (Dock)"
 defaults write com.apple.dock mouse-over-hilite-stack -bool true;ok
 
-running "Set the icon size of Dock items to 90 pixels"
-defaults write com.apple.dock tilesize -int 90;ok
+running "Set the icon size of Dock items to 50 pixels"
+defaults write com.apple.dock tilesize -int 50;ok
 
 running "Change minimize/maximize window effect to scale"
 defaults write com.apple.dock mineffect -string "scale";ok
