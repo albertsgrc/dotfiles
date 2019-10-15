@@ -83,7 +83,8 @@ module.exports = {
     'spotify',
     'rescuetime',
     'postman',
-    'whatsapp'
+    'whatsapp',
+    'google-cloud-sdk'
     //'xquartz'
   ],
   gem: [
