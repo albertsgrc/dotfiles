@@ -338,6 +338,11 @@ brew cleanup --force > /dev/null 2>&1
 rm -f -r /Library/Caches/Homebrew/* > /dev/null 2>&1
 ok
 
+running "symlink gnu gcc"
+sudo rm -f /usr/local/bin/g++ /usr/local/bin/gcc
+ln -s /usr/local/bin/g++-9 /usr/local/bin/g++; ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
+ok
+
 bot "OS Configuration"
 read -r -p "Do you want to update the system configurations? [y|N] " response
 if [[ -z $response || $response =~ ^(n|N) ]]; then
