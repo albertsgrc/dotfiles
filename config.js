@@ -55,7 +55,8 @@ module.exports = {
     'k6',
     'zsh-syntax-highlighting',
     'rust',
-    'gcc'
+    'gcc',
+    'cmake' 
   ],
   cask: [
     //'adium',
