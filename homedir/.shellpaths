@@ -4,8 +4,8 @@ export PATH=$PATH:.
 export PATH=$PATH:~/opt/
 
 # Brew
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/local/bin
 
 # Editor
 export EDITOR=code
