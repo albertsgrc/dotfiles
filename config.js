@@ -53,7 +53,8 @@ module.exports = {
     'kubernetes-cli',
     'Schniz/tap/fnm',
     'k6',
-    'zsh-syntax-highlighting'
+    'zsh-syntax-highlighting',
+    'rust'
   ],
   cask: [
     //'adium',
