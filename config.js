@@ -54,7 +54,8 @@ module.exports = {
     'Schniz/tap/fnm',
     'k6',
     'zsh-syntax-highlighting',
-    'rust'
+    'rust',
+    'gcc'
   ],
   cask: [
     //'adium',
