@@ -54,7 +54,7 @@ module.exports = {
     'Schniz/tap/fnm',
     'k6',
     'zsh-syntax-highlighting',
-    'rust',
+    'rustup-init',
     'gcc',
     'cmake' 
   ],
