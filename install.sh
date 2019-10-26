@@ -612,7 +612,7 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true;ok
 
 running "Save to disk (not to iCloud) by default"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false;ok
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool true;ok
 
 running "Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true;ok
@@ -669,13 +669,13 @@ defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1;ok
 
 running "Trackpad: map bottom right corner to right-click"
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true;ok
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+# defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+# defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true;ok
 
-running "Disable 'natural' (Lion-style) scrolling"
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false;ok
+running "Enable 'natural' (Lion-style) scrolling"
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true;ok
 
 running "Increase sound quality for Bluetooth headphones/headsets"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40;ok
@@ -689,14 +689,14 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144;o
 running "Follow the keyboard focus while zoomed in"
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true;ok
 
-running "Disable press-and-hold for keys in favor of key repeat"
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;ok
+running "Enable press-and-hold for keys"
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true;ok
 
 running "Set a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 20;ok
 
-running "Set language and text formats (english/US)"
+running "Set language and text formats (catalan)"
 defaults write NSGlobalDomain AppleLanguages -array "ca"
 defaults write NSGlobalDomain AppleLocale -string "es@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
@@ -711,7 +711,7 @@ bot "Configuring the Screen"
 
 running "Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0;ok
+defaults write com.apple.screensaver askForPasswordDelay -int 120;ok
 
 running "Save screenshots to the desktop"
 defaults write com.apple.screencapture location -string "${HOME}/Desktop";ok
@@ -741,13 +741,13 @@ defaults write com.apple.finder QuitMenuItem -bool true;ok
 running "Disable window animations and Get Info animations"
 defaults write com.apple.finder DisableAllAnimations -bool true;ok
 
-running "Set Desktop as the default location for new Finder windows"
+running "Set home as the default location for new Finder windows"
 # For other paths, use 'PfLo' and 'file:///full/path/here/'
-defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/";ok
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/";ok
 
-running "Show hidden files by default"
-defaults write com.apple.finder AppleShowAllFiles -bool true;ok
+running "Do not show hidden files by default"
+defaults write com.apple.finder AppleShowAllFiles -bool false;ok
 
 running "Show all filename extensions"
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true;ok
