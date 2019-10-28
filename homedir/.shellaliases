@@ -131,3 +131,7 @@ alias acc='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -I$INCL
 alias aecc='compila -O2 -Wno-uninitialized -Wshadow -I$INCL'
 alias ae++='compila -ansi -Wall -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow -std=c++1y -O3 -I$INCL'
 alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c++1y -I$INCL'
+
+# Program aliases
+alias python='python3'
+alias pip='pip3'
