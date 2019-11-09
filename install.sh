@@ -262,6 +262,8 @@ if [[ $response =~ (y|yes|Y) ]]; then
   popd > /dev/null 2>&1
 fi
 
+export ZSH=$HOME/.dotfiles/oh-my-zsh
+export ZSH_CUSTOM=$ZSH/custom
 
 if [[ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]]; then
   running "Add zsh autosuggestions plugin"
