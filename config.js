@@ -51,7 +51,6 @@ module.exports = {
     "wget --enable-iri",
     "google-cloud-sdk",
     "kubernetes-cli",
-    "Schniz/tap/fnm",
     "k6",
     "zsh-syntax-highlighting",
     "rustup-init",
