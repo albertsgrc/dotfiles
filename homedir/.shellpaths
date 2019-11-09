@@ -21,3 +21,6 @@ export TIMEFORMAT=$'\nTotal: %3lR\nUsuari: %3lU\nSistema: %3lS\n'
 
 # The next line enables shell command completion for gcloud.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
+
+# Rust Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
