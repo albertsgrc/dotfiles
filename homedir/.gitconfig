@@ -188,8 +188,8 @@
   clean = expand -t 4
 
 [push]
-  default = current
-	followTags = true
+  default = matching
+  followTags = true
 
 [filter "media"]
   required = true
