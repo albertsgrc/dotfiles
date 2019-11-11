@@ -315,7 +315,7 @@ fi
 require_brew n
 
 # n
-require_n lts
+require_node_version_manager lts
 
 # always pin versions (no surprises, consistent dev/build machines)
 npm config set save-exact true

@@ -75,9 +75,10 @@ function require_apm() {
         apm install $1
     fi
     ok
+}
 
-function require_n() {
+function require_node_version_manager() {
+    sudo n $1
     sudo chown $USER /usr/local/n
-    n $1
     ok
 }
