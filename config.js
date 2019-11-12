@@ -58,7 +58,8 @@ module.exports = {
     "cmake",
     "ripgrep",
     "exa",
-    "minikube"
+    "minikube",
+    "hyperkit"
   ],
   cask: [
     //'adium',
