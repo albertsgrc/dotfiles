@@ -59,7 +59,8 @@ module.exports = {
     "ripgrep",
     "exa",
     "minikube",
-    "hyperkit"
+    "hyperkit",
+    "procs"
   ],
   cask: [
     //'adium',
