@@ -60,7 +60,8 @@ module.exports = {
     "exa",
     "minikube",
     "hyperkit",
-    "procs"
+    "procs",
+    "tokei"
   ],
   cask: [
     //'adium',
