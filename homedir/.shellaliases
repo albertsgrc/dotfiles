@@ -138,3 +138,4 @@ alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c
 # Program aliases
 alias python='python3'
 alias pip='pip3'
+alias cloc="tokei"
