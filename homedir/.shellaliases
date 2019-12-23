@@ -71,8 +71,11 @@ alias network.internalip="ifconfig en0 | egrep -o '([0-9]+\.[0-9]+\.[0-9]+\.[0-9
 # -l Long format
 # -h Short size suffixes (B, K, M, G, P)
 # -p Postpend slash to folders
-alias ls="exa"
 alias ll='ls -l'
+
+# Unix replacement aliases
+alias ls="exa"
+alias ps="procs"
 
 # Typo aliases
 alias LS="ls"
@@ -135,3 +138,4 @@ alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c
 # Program aliases
 alias python='python3'
 alias pip='pip3'
+alias cloc="tokei"
