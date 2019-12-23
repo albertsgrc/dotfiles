@@ -62,7 +62,9 @@ module.exports = {
     "hyperkit",
     "procs",
     "tokei",
-    "hyperfine"
+    "hyperfine",
+    "go",
+    "elm"
   ],
   cask: [
     //'adium',
