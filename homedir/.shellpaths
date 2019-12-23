@@ -13,9 +13,6 @@ export EDITOR=code
 # Time format
 export TIMEFORMAT=$'\nTotal: %3lR\nUsuari: %3lU\nSistema: %3lS\n'
 
-# GO
-#export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
 # The next line updates PATH for the Google Cloud SDK.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/path.zsh.inc"
 
@@ -24,3 +21,9 @@ export TIMEFORMAT=$'\nTotal: %3lR\nUsuari: %3lU\nSistema: %3lS\n'
 
 # Rust Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Go
+export PATH=$HOME/go/bin:$PATH
+
+# MacPorts Installer addition on 2019-12-21_at_16:04:32: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
