@@ -21,5 +21,3 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 function precmd () {
   z --add "$(pwd -P)"
 }
-
-export PATH="$HOME/.cargo/bin:$PATH"
