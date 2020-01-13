@@ -22,8 +22,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time load ram time)
 # colorcode test
 # for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"
 
-POWERLEVEL9K_SHOW_CHANGESET=true
-
 #export ZSH_THEME="random"
 
 # Set to this to use case-sensitive completion
