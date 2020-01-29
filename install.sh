@@ -345,6 +345,10 @@ sudo rm -f /usr/local/bin/g++ /usr/local/bin/gcc
 ln -s /usr/local/bin/g++-9 /usr/local/bin/g++; ln -s /usr/local/bin/gcc-9 /usr/local/bin/gcc
 ok
 
+running "installing fzf"
+/usr/local/opt/fzf/install
+ok
+
 bot "OS Configuration"
 read -r -p "Do you want to update the system configurations? [y|N] " response
 if [[ -z $response || $response =~ ^(n|N) ]]; then
