@@ -10,14 +10,14 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 DEFAULT_USER=$(whoami)
 
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 
 # https://github.com/bhilburn/powerlevel9k#customizing-prompt-segments
 # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
 POWERLEVEL9K_MODE="awesome-patched"
 
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="0"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time load ram time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
 
 # colorcode test
 # for code ({000..255}) print -P -- "$code: %F{$code}This is how your text would look like%f"
