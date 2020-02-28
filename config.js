@@ -56,6 +56,7 @@ module.exports = {
     "rustup-init",
     "gcc",
     "cmake",
+    "ruby",
     "ripgrep",
     "exa",
     "minikube",
