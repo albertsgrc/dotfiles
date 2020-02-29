@@ -27,3 +27,5 @@ export PATH=$HOME/go/bin:$PATH
 
 # MacPorts Installer addition on 2019-12-21_at_16:04:32: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+# Emscripten
