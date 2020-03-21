@@ -96,7 +96,8 @@ module.exports = {
     "rescuetime",
     "postman",
     "whatsapp",
-    "google-cloud-sdk"
+    "google-cloud-sdk",
+    "station"
     //'xquartz'
   ],
   gem: [],
