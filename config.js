@@ -97,7 +97,10 @@ module.exports = {
     "postman",
     "whatsapp",
     "google-cloud-sdk",
-    "station"
+    "station",
+    "clion",
+    "intellij-idea",
+    "notion"
     //'xquartz'
   ],
   gem: [],
