@@ -83,7 +83,6 @@ module.exports = {
     "iterm2",
     //'signal',
     //'macvim',
-    "sizeup",
     //'sketchup',
     "slack",
     "the-unarchiver",
