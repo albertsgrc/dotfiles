@@ -88,7 +88,7 @@ module.exports = {
     "the-unarchiver",
     //'torbrowser',
     //'transmission',
-    "vscodium",
+    "visual-studio-code",
     "vlc",
     "google-chrome",
     "spotify",
