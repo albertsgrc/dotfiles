@@ -117,6 +117,7 @@ module.exports = {
     "coffeescript",
     "yarn",
     "lerna"
+    "ngrok"
     // ,'yo'
   ]
 };
