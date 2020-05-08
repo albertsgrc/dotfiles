@@ -9,8 +9,6 @@ alias g=git
 
 alias cd..="cd .."
 
-alias gor="godev; cd jobs/myreach/reach"
-
 alias godev="cd ~/dev"
 alias goprog="cd ~/opt"
 alias god="cd ~/Downloads"
