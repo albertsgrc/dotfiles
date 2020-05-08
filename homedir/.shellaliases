@@ -15,6 +15,8 @@ alias godev="cd ~/dev"
 alias goprog="cd ~/opt"
 alias god="cd ~/Downloads"
 
+alias goh="godev; cd jobs/happyscribe/hs-monorepo"
+
 #############################
 # Utilities
 
