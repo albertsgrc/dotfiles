@@ -5,15 +5,16 @@
 alias g=git
 
 #############################
-# Shortcuts
+# Directory change shortcuts
 
 alias cd..="cd .."
-
-alias gor="godev; cd jobs/myreach/reach"
 
 alias godev="cd ~/dev"
 alias goprog="cd ~/opt"
 alias god="cd ~/Downloads"
+
+alias goh="godev; cd jobs/happyscribe/hs-monorepo"
+alias gof="godev; cd personal/apps/finaware"
 
 #############################
 # Utilities
@@ -127,6 +128,7 @@ alias kp='kubectl get pods -o wide'
 alias kdp='kubectl describe pod'
 alias kdn='kubectl describe node'
 
+#############################
 # Compiler aliases
 alias p1++='g++ -ansi -Wall -O2 -DNDEBUG -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow'
 alias a++='compila -ansi -Wall -D_GLIBCXX_DEBUG -DNDEBUG -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow -std=c++1y -I$INCL'
@@ -135,7 +137,37 @@ alias aecc='compila -O2 -Wno-uninitialized -Wshadow -I$INCL'
 alias ae++='compila -ansi -Wall -Wextra -Werror -Wno-uninitialized -Wno-sign-compare -Wshadow -std=c++1y -O3 -I$INCL'
 alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c++1y -I$INCL'
 
+#############################
 # Program aliases
 alias python='python3'
 alias pip='pip3'
 alias cloc="tokei"
+
+#############################
+# Shell configuration edition
+alias ealias='vim ~/.shellaliases'
+alias evars='vim ~/.shellvars'
+alias epaths='vim ~/.shellpaths'
+alias efn='vim ~/.shellfn'
+alias emethods='efn'
+
+
+#############################
+# HappyScribe
+alias hsbs='rm -rf $HS_MONOREPO_DIR/packages/hs-backend/.overmind.sock && npm run start --prefix $HS_MONOREPO_DIR/packages/hs-backend'
+alias hsus='npm run start:dev  --prefix $HS_MONOREPO_DIR/packages/hs-uppy-companion-server'
+alias hscp='npm run console:backend:prod --prefix $HS_MONOREPO_DIR'
+alias hscl='npm run console:backend --prefix $HS_MONOREPO_DIR'
+alias hscs='npm run console:backend:staging --prefix $HS_MONOREPO_DIR'
+alias hsls='npm run lint:staged --prefix $HS_MONOREPO_DIR'
+alias hsdp='npm run deploy:production:patch --prefix $HS_MONOREPO_DIR'
+alias hsds='npm run deploy:staging --prefix $HS_MONOREPO_DIR'
+alias hsb='npm run bootstrap --prefix $HS_MONOREPO_DIR'
+alias hsc='npm run clean --prefix $HS_MONOREPO_DIR'
+alias hsr='hsc && hsb'
+alias hsm='npm run db:migrate --prefix $HS_MONOREPO_DIR/packages/hs-backend'
+alias hsms='npm run db:migrate:status --prefix $HS_MONOREPO_DIR/packages/hs-backend'
+
+#############################
+# Miscellaneous
+alias fixpostgres='rm -rf /usr/local/var/postgres/postmaster.pid && brew services restart postgresql'

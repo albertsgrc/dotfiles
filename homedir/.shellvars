@@ -24,3 +24,11 @@ export MYDEVAPPS=/Applications/Dev
 #########################################################################
 export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
 export NVM_DIR=~/.nvm
+
+
+#########################################################################
+# Directory locations
+#########################################################################
+export JOBS_DIR=~/dev/jobs
+export HS_DIR=$JOBS_DIR/happyscribe
+export HS_MONOREPO_DIR=$HS_DIR/hs-monorepo

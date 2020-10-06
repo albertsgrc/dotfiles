@@ -154,3 +154,54 @@ ftext() {
 ffile() {
     sudo find . -iname "*$@*"
 }
+
+
+# HappyScribe methods
+hsrb() {
+    npm run db:rollback --prefix $HS_MONOREPO_DIR/packages/hs-backend STEP=$1 RAILS_ENV=development
+    npm run db:rollback --prefix $HS_MONOREPO_DIR/packages/hs-backend STEP=$1 RAILS_ENV=test
+}
+
+hsat() {
+  LINE=$1
+
+  if [ ! -z "$LINE" ]; then
+    TEST_FILE=$(node -e "console.log('$TEST'.split(':')[0])")
+    TEST_FILE="${TEST_FILE}:${LINE}"
+  else
+    TEST_FILE=$TEST
+  fi
+
+  echo "Running on test file $TEST_FILE"
+
+  TEST=$TEST_FILE npm run test:app --prefix $HS_MONOREPO_DIR/packages/hs-backend
+}
+
+hsatr() {
+  USE_PRY_RESCUE=1 hsat $@
+}
+
+hsata() {
+  unset TEST
+  hsat
+}
+
+hsatf() {
+    cd $HS_MONOREPO_DIR/packages/hs-backend/test
+    TEST_FILE="test/$(find . -type f -name '*.rb' | fzf)"
+
+    if [ $? -ne 0 ]; then
+        return 1
+    fi
+
+    LINE=$1
+
+    if [ ! -z "$LINE" ]; then
+        TEST_FILE="${TEST_FILE}:${LINE}"
+    fi
+
+    echo "Running on test file $TEST_FILE"
+
+    export TEST=$TEST_FILE
+    npm run test:app --prefix $HS_MONOREPO_DIR/packages/hs-backend
+}
