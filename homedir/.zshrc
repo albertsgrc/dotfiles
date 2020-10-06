@@ -58,3 +58,8 @@ rm -f ~/.zcompdump*
 
 # GHC
 [ -f "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env" ] && source "${GHCUP_INSTALL_BASE_PREFIX:=$HOME}/.ghcup/env"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+eval "$(rbenv init -)"
