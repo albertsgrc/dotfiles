@@ -83,13 +83,12 @@ module.exports = {
     "iterm2",
     //'signal',
     //'macvim',
-    "sizeup",
     //'sketchup',
     "slack",
     "the-unarchiver",
     //'torbrowser',
     //'transmission',
-    "vscodium",
+    "visual-studio-code",
     "vlc",
     "google-chrome",
     "spotify",
@@ -118,6 +117,7 @@ module.exports = {
     "coffeescript",
     "yarn",
     "lerna"
+    "ngrok"
     // ,'yo'
   ]
 };

@@ -15,6 +15,7 @@ alias god="cd ~/Downloads"
 
 alias goh="godev; cd jobs/happyscribe/hs-monorepo"
 alias gof="godev; cd personal/apps/finaware"
+alias gop="godev; cd playground"
 
 #############################
 # Utilities
