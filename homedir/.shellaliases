@@ -155,8 +155,8 @@ alias emethods='efn'
 
 #############################
 # HappyScribe
-alias hsbs='rm -rf $HS_MONOREPO_DIR/packages/hs-backend/.overmind.sock && npm run start --prefix $HS_MONOREPO_DIR/packages/hs-backend'
-alias hsus='npm run start:dev  --prefix $HS_MONOREPO_DIR/packages/hs-uppy-companion-server'
+alias hsbs='rm -rf $HS_MONOREPO_DIR/.overmind.sock && npm run start --prefix $HS_MONOREPO_DIR'
+alias hsus='npm run start:dev  --prefix $HS_UPPY_COMPANION_SERVER_DIR'
 alias hscp='npm run console:backend:prod --prefix $HS_MONOREPO_DIR'
 alias hscl='npm run console:backend --prefix $HS_MONOREPO_DIR'
 alias hscs='npm run console:backend:staging --prefix $HS_MONOREPO_DIR'
@@ -166,8 +166,8 @@ alias hsds='npm run deploy:staging --prefix $HS_MONOREPO_DIR'
 alias hsb='npm run bootstrap --prefix $HS_MONOREPO_DIR'
 alias hsc='npm run clean --prefix $HS_MONOREPO_DIR'
 alias hsr='hsc && hsb'
-alias hsm='npm run db:migrate --prefix $HS_MONOREPO_DIR/packages/hs-backend'
-alias hsms='npm run db:migrate:status --prefix $HS_MONOREPO_DIR/packages/hs-backend'
+alias hsm='npm run db:migrate --prefix $HS_MONOREPO_DIR'
+alias hsms='npm run db:migrate:status --prefix $HS_MONOREPO_DIR'
 
 #############################
 # Miscellaneous

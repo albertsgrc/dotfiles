@@ -158,8 +158,8 @@ ffile() {
 
 # HappyScribe methods
 hsrb() {
-    npm run db:rollback --prefix $HS_MONOREPO_DIR/packages/hs-backend STEP=$1 RAILS_ENV=development
-    npm run db:rollback --prefix $HS_MONOREPO_DIR/packages/hs-backend STEP=$1 RAILS_ENV=test
+    npm run db:rollback --prefix $HS_MONOREPO_DIR STEP=$1 RAILS_ENV=development
+    npm run db:rollback --prefix $HS_MONOREPO_DIR STEP=$1 RAILS_ENV=test
 }
 
 hsat() {
@@ -174,7 +174,7 @@ hsat() {
 
   echo "Running on test file $TEST_FILE"
 
-  TEST=$TEST_FILE npm run test:app --prefix $HS_MONOREPO_DIR/packages/hs-backend
+  TEST=$TEST_FILE npm run test:app --prefix $HS_MONOREPO_DIR
 }
 
 hsatr() {
@@ -187,7 +187,7 @@ hsata() {
 }
 
 hsatf() {
-    cd $HS_MONOREPO_DIR/packages/hs-backend/test
+    cd $HS_MONOREPO_DIR/test
     TEST_FILE="test/$(find . -type f -name '*.rb' | fzf)"
 
     if [ $? -ne 0 ]; then
@@ -203,5 +203,5 @@ hsatf() {
     echo "Running on test file $TEST_FILE"
 
     export TEST=$TEST_FILE
-    npm run test:app --prefix $HS_MONOREPO_DIR/packages/hs-backend
+    npm run test:app --prefix $HS_MONOREPO_DIR
 }

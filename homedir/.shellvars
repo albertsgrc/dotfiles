@@ -32,3 +32,4 @@ export NVM_DIR=~/.nvm
 export JOBS_DIR=~/dev/jobs
 export HS_DIR=$JOBS_DIR/happyscribe
 export HS_MONOREPO_DIR=$HS_DIR/hs-monorepo
+export HS_UPPY_COMPANION_SERVER_DIR=$HS_DIR/hs-uppy-companion-server
