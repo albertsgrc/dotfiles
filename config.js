@@ -99,7 +99,11 @@ module.exports = {
     "station",
     "clion",
     "intellij-idea",
-    "notion"
+    "notion",
+    "rubymine",
+    "textexpander",
+    "discord",
+    "sublime_text"
     //'xquartz'
   ],
   gem: [],
@@ -116,7 +120,6 @@ module.exports = {
     "vtop",
     "coffeescript",
     "yarn",
-    "lerna"
     "ngrok"
     // ,'yo'
   ]
