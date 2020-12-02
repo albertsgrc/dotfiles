@@ -143,6 +143,9 @@ alias ap++='compila -D_GLIBCXX_DEBUG -DNDEBUG -Wno-uninitialized -Wshadow -std=c
 alias python='python3'
 alias pip='pip3'
 alias cloc="tokei"
+alias be="bundle exec"
+alias berk="be rake"
+alias bera="be rails"
 
 #############################
 # Shell configuration edition
