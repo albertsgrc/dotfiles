@@ -22,7 +22,7 @@ if [ $? -ne 0 ]; then
   # Keep-alive: update existing sudo time stamp until the script has finished
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-  echo "Do you want me to setup this machine to allow you to run sudo without a password?\nPlease read here to see what I am doing:\nhttp://wiki.summercode.com/sudo_without_a_password_in_mac_os_x \n"
+  bot "Do you want me to setup this machine to allow you to run sudo without a password?\nPlease read here to see what I am doing:\nhttp://wiki.summercode.com/sudo_without_a_password_in_mac_os_x \n"
 
   read -r -p "Make sudo passwordless? [y|N] " response
 
@@ -192,6 +192,7 @@ if [[ $? != 0 ]]; then
     error "unable to install homebrew, script $0 abort!"
     exit 2
   fi
+  brew analytics off
 else
   ok
   bot "Homebrew"
@@ -355,7 +356,7 @@ if [[ -z $response || $response =~ ^(n|N) ]]; then
   open /Applications/iTerm.app
   bot "All done"
   exit
-fi 
+fi
 
 ###############################################################################
 bot "Configuring General System UI/UX..."
@@ -1214,6 +1215,6 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   killall "${app}" > /dev/null 2>&1
 done
 
-brew update && brew upgrade && brew cleanup && brew cask cleanup
+brew update && brew upgrade && brew cleanup 
 
 bot "Woot! All done"
