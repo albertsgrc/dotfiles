@@ -50,16 +50,16 @@ module.exports = {
     // Install wget with IRI support
     "wget --enable-iri",
     "google-cloud-sdk",
-    "kubernetes-cli",
-    "k6",
+    // "kubernetes-cli",
+    // "k6",
     "zsh-syntax-highlighting",
     "rustup-init",
     "gcc",
     "cmake",
-    "ruby",
+    // "ruby",
     "ripgrep",
     "exa",
-    "minikube",
+    // "minikube",
     "hyperkit",
     "procs",
     "tokei",
@@ -78,7 +78,7 @@ module.exports = {
     //'dropbox',
     //'evernote',
     "flux",
-    "gpg-suite",
+    // "gpg-suite",
     //'ireadfast',
     "iterm2",
     //'signal',
@@ -95,8 +95,7 @@ module.exports = {
     "rescuetime",
     "postman",
     "whatsapp",
-    "google-cloud-sdk",
-    "station",
+    // "station",
     "clion",
     "intellij-idea",
     "notion",
@@ -104,7 +103,7 @@ module.exports = {
     "textexpander",
     "discord",
     "sublime_text"
-    //'xquartz'
+    // 'xquartz'
   ],
   gem: [],
   npm: [
@@ -121,6 +120,6 @@ module.exports = {
     "coffeescript",
     "yarn",
     "ngrok"
-    // ,'yo'
+    // 'yo'
   ]
 };
