@@ -50,7 +50,7 @@ module.exports = {
     // Install wget with IRI support
     "wget --enable-iri",
     "google-cloud-sdk",
-    "kubernetes-cli",
+    // "kubernetes-cli",
     // "k6",
     "zsh-syntax-highlighting",
     "rustup-init",
@@ -59,7 +59,7 @@ module.exports = {
     // "ruby",
     "ripgrep",
     "exa",
-    "minikube",
+    // "minikube",
     "hyperkit",
     "procs",
     "tokei",
