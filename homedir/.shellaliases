@@ -171,6 +171,7 @@ alias hsc='npm run clean --prefix $HS_MONOREPO_DIR'
 alias hsr='hsc && hsb'
 alias hsm='npm run db:migrate --prefix $HS_MONOREPO_DIR'
 alias hsms='npm run db:migrate:status --prefix $HS_MONOREPO_DIR'
+alias hsinvoke='npm run invoke --prefix $HS_MONOREPO_DIR/standalone_packages/hs-transcoder-service --'
 
 #############################
 # Miscellaneous
