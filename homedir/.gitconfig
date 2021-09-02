@@ -53,6 +53,7 @@
 [alias]
   # most commonly used
   co = checkout
+  com = checkout master
   d = diff --color-words
   cam = commit -a -m
   upm = !git fetch upstream && git merge upstream/master
@@ -73,6 +74,7 @@
   who = shortlog -s --
   ph = push
   pl = pull
+  pom = pull origin master
   lp = log -p
   lod = log --oneline --decorate
   lg = log --graph

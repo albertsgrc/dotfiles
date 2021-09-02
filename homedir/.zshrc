@@ -62,6 +62,8 @@ rm -rf ~/.zcompdump*
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
 eval "$(rbenv init -)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
